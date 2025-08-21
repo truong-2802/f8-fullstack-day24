@@ -1,0 +1,91 @@
+body {
+  background-color: aqua;
+}
+
+.tinder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.tintin {
+  display: flex;
+  height: 765px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.tinder-s {
+  position: absolute;
+  max-width: 500px;
+  max-height: 700px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 10px rgba(83, 82, 82, 0.3);
+}
+
+.tinder-s.like {
+  border-color: #00e676;
+}
+
+.tinder-s.nope {
+  border-color: #f60f3d;
+}
+
+.bor-icon {
+  border-radius: 50%;
+  border: 2px solid #646363;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bor-icon.active-like {
+  background: #00e676;
+  transform: scale(1.2);
+}
+
+.bor-icon.active-nope {
+  background: #ff1744;
+  transform: scale(1.2);
+}
+
+img {
+  object-fit: contain;
+}
+h3,
+p {
+  position: absolute;
+  color: aliceblue;
+  font-weight: 700;
+  font-family: monospace;
+}
+h3 {
+  left: 10px;
+  bottom: 60px;
+}
+p {
+  left: 10px;
+  bottom: 30px;
+  font-size: 15px;
+}
+
+.icon {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  gap: 50px;
+}
+
+.bor-icon img {
+  border-radius: 50%;
+  width: 70px;
+  padding-top: 3px;
+  margin: 3px;
+}
