@@ -8,7 +8,7 @@ const coord = {
   y : 0
 }
 
-const tinder = document.querySelectorAll(".tinder-s");
+const tinders = document.querySelectorAll(".tinder-s");
 
 function handleMouseDown(e) {
     e.preventDefault();          
@@ -21,8 +21,8 @@ function handleMouseDown(e) {
     current.style.transition = "none"; 
 }
 
-tinder.forEach(card => {
-    card.addEventListener("mousedown", handleMouseDown);
+tinders.forEach(tinder => {
+    tinder.addEventListener("mousedown", handleMouseDown);
 });
 
 
@@ -114,8 +114,8 @@ function handleTouchStart(e) {
     e.currentTarget.dispatchEvent(mouseEvent);
 }
 
-tinder.forEach(card => {
-    card.addEventListener("touchstart", handleTouchStart, { passive: false });
+tinders.forEach(tinder => {
+    tinder.addEventListener("touchstart", handleTouchStart, { passive: false });
 });
 
 function handleTouchEnd(e) {
